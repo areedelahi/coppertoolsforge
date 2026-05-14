@@ -2,9 +2,6 @@
 
 **Lore:** Copper has always been beautiful, but now it has a purpose. True craftsmanship means working with the world's natural aging process.
 
-> [!WARNING]
-> **GITHUB** is the only official platform for this mod, all others are stolen uploads. Do not download them.
-
 ## Copper Tools: Realistic Oxidation and Gear Progression for Minecraft Forge
 
 **Copper Tools** is a Forge mod designed to give copper a meaningful place in your survival progression. If you've ever felt that copper was purely decorative, this mod changes that by introducing a full set of tools and armor that interact with the environment. Unlike standard iron or diamond gear, copper equipment features a unique oxidation system that mirrors the behavior of copper blocks in vanilla Minecraft.
