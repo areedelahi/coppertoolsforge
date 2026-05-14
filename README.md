@@ -20,21 +20,15 @@ This mod adds a complete set of tools (Sword, Pickaxe, Axe, Shovel, Hoe) and arm
 
 *   **Realistic Oxidation:** All copper gear progresses through four stages of oxidation (Unaffected, Exposed, Weathered, Oxidized).
 *   **Performance Scaling:** Tools lose mining speed and armor loses defense as they oxidize, encouraging players to care for their gear.
-*   **Waxing Protection:** Use honeycomb in a crafting grid or by right-clicking to wax your gear, locking in its current oxidation state forever.
-*   **Scraping & Maintenance:** Use an axe on oxidized gear to scrape off the rust and restore it to a previous stage.
-*   **Vanilla Integration:** Built using standard Forge systems to ensure compatibility with other mods and resource packs.
-*   **High Quality Textures:** Custom-made textures for every stage of oxidation to ensure your character looks great in any state.
-
+*   **Waxing Protection:** Use honeycomb in a crafting grid or by right-clicking to wax your gear, locking in its current oxidation state forever or until its used extensively.
 ### Usage:
 
 To craft copper gear, simply use copper ingots in the standard tool and armor recipes.
 *   **To wax an item:** Combine a copper tool or armor piece with honeycomb in a crafting table.
-*   **To scrape an item:** Use an axe on a copper item to remove one layer of oxidation.
-*   **Maintenance is key:** Keep an eye on your gear's appearance; once it turns fully green, its stats will be significantly lower than when it was fresh.
-
+*   
 ### Installation:
 
-1.  Download the `.jar` file.
+1.  Build with gradle and Download the `.jar` file.
 2.  Place it in your Minecraft `mods` folder.
 3.  Ensure you have **Forge 1.20.1** installed.
 
