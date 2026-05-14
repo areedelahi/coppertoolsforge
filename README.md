@@ -1,9 +1,6 @@
 # copper tools mod
-basically just adds copper tools and armor to the game.
-it has oxidation so things get rusty over time.
-you can wax them to keep them from getting worse.
-i made this because i wanted copper to actually be useful for once.
-not much else to say really.
-just build it with gradle and throw it in your mods folder.
-it works with forge 1.20.1.
-have fun i guess.
+a forge mod for minecraft 1.20.1 that expands the use of copper by adding a full set of tools and armor.
+the items feature custom oxidation mechanics similar to copper blocks, where they slowly weather and change appearance over time.
+as the oxidation increases, the performance of the gear degrades, encouraging players to maintain their equipment.
+players can use honeycomb to wax the items, preserving their current state and preventing further degradation.
+this project was built to give copper a more significant role in the game's early-to-mid game progression.
