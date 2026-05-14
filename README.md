@@ -17,10 +17,6 @@ This mod features dynamic performance degradation: as your gear oxidizes, its ef
 
 ---
 
-If you want a cheap and extremely good server, check out **GravelHost**, use my link or the code for 25% off for your purchase. 
-
----
-
 This mod adds a complete set of tools (Sword, Pickaxe, Axe, Shovel, Hoe) and armor (Helmet, Chestplate, Leggings, Boots) made from copper. It introduces a weathering system where your gear slowly turns green over time, impacting its stats until it reaches a fully weathered state.
 
 ### Features:
@@ -41,8 +37,8 @@ To craft copper gear, simply use copper ingots in the standard tool and armor re
 
 ### Installation:
 
-1.  Download the  file.
-2.  Place it in your Minecraft  folder.
+1.  Download the `.jar` file.
+2.  Place it in your Minecraft `mods` folder.
 3.  Ensure you have **Forge 1.20.1** installed.
 
 ### Known Limitations:
