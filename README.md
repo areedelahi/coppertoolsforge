@@ -41,19 +41,11 @@ To craft copper gear, simply use copper ingots in the standard tool and armor re
 2.  Place it in your Minecraft `mods` folder.
 3.  Ensure you have **Forge 1.20.1** installed.
 
-### Known Limitations:
-
-*   **Compatibility:** While designed to be highly compatible, some mods that drastically overhaul tool mechanics may cause minor conflicts.
-*   **Visuals:** Shaders may sometimes affect the look of the custom oxidation overlays depending on your settings.
-
-This mod doesn't require any complex setup and follows standard Forge protocols. It uses a clean implementation that avoids overriding base game classes, ensuring stability on large servers.
-
 ---
+NOTE: The textures are NOT made by me, they are from the mod https://www.curseforge.com/minecraft/mc-mods/oxidizable-copper-gear under MIT license, But the rest of the project and all the code are by me alone.
 
 If you want to support me and donate a small amount, please consider this one time patreon donation (no subscription or membership):
 [**Join My Patreon**](https://www.patreon.com/areedelahi)
 
 Join the discord for help and chat:
 [**Areed's Discord Server**](https://discord.gg/yourlink)
-
-*Part of the Survival Essentials collection by Areed.*
