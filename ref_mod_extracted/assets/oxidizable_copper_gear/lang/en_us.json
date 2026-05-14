@@ -1,0 +1,7 @@
+{
+  "text.oxidizable_copper_gear.exposed": "Exposed %s",
+  "text.oxidizable_copper_gear.weathered": "Weathered %s",
+  "text.oxidizable_copper_gear.oxidized": "Oxidized %s",
+  "text.oxidizable_copper_gear.waxed": "Waxed %s",
+  "tag.item.oxidizable_copper_gear.oxidizable": "Oxidizable"
+}

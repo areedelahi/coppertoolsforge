@@ -1,0 +1,18 @@
+{
+  "item.coppertools.copper_sword": "Copper Sword",
+  "item.coppertools.copper_pickaxe": "Copper Pickaxe",
+  "item.coppertools.copper_axe": "Copper Axe",
+  "item.coppertools.copper_shovel": "Copper Shovel",
+  "item.coppertools.copper_hoe": "Copper Hoe",
+  "item.coppertools.copper_helmet": "Copper Helmet",
+  "item.coppertools.copper_chestplate": "Copper Chestplate",
+  "item.coppertools.copper_leggings": "Copper Leggings",
+  "item.coppertools.copper_boots": "Copper Boots",
+  "creativetab.coppertools": "Copper Tools",
+  "tooltip.coppertools.oxidation_stage": "Oxidation: %s",
+  "tooltip.coppertools.waxed_remaining": "Wax Protection: %s uses remaining",
+  "tooltip.coppertools.not_waxed": "Not Waxed - Use Honeycomb to protect",
+  "tooltip.coppertools.speed_penalty": "Mining Speed: %s",
+  "tooltip.coppertools.armor_penalty": "Armor: %s",
+  "message.coppertools.wax_expired": "The wax on your %s has worn off!"
+}

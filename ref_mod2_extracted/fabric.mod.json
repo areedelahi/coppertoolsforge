@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "oxidizable_copper_gear",
+	"version": "1.0.0",
+	"name": "Oxidizing Armour",
+	"description": "Copper armour that oxidizes over time",
+	"authors": [
+		"Me!"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.oxidizingarmour.OxidizingArmour"
+		],
+		"client": [
+			"com.example.oxidizingarmour.client.OxidizingArmourClient"
+		]
+	},
+	"mixins": [
+		"oxidizingarmour.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

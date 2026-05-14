@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "coppertools:item/copper_hoe"
+  },
+  "overrides": [
+    { "predicate": { "coppertools:oxidation": 0.25 }, "model": "coppertools:item/exposed_copper_hoe" },
+    { "predicate": { "coppertools:oxidation": 0.50 }, "model": "coppertools:item/weathered_copper_hoe" },
+    { "predicate": { "coppertools:oxidation": 0.75 }, "model": "coppertools:item/oxidized_copper_hoe" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.oxidizingarmour.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ZombieMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

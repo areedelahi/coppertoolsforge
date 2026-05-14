@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "oxidizable_copper_gear:item/oxidized_copper_hoe"
+  }
+}

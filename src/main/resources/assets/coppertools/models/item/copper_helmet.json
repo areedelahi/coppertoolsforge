@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "coppertools:item/copper_helmet"
+  },
+  "overrides": [
+    { "predicate": { "coppertools:oxidation": 0.25 }, "model": "coppertools:item/exposed_copper_helmet" },
+    { "predicate": { "coppertools:oxidation": 0.50 }, "model": "coppertools:item/weathered_copper_helmet" },
+    { "predicate": { "coppertools:oxidation": 0.75 }, "model": "coppertools:item/oxidized_copper_helmet" }
+  ]
+}
