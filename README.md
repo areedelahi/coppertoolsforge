@@ -33,7 +33,7 @@ To craft copper gear, simply use copper ingots in the standard tool and armor re
 3.  Ensure you have **Forge 1.20.1** installed.
 
 ---
-NOTE: The textures are NOT made by me, they are from the mod https://www.curseforge.com/minecraft/mc-mods/oxidizable-copper-gear under MIT license, But the rest of the project and all the code are by me alone.
+
 
 This was a one time Project for myself, its not supported ahead for future versions.
 
