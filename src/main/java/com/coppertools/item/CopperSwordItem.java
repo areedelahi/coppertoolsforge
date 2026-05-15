@@ -41,6 +41,26 @@ public class CopperSwordItem extends SwordItem {
     }
 
     @Override
+    public boolean mineBlock(ItemStack stack, Level level, net.minecraft.world.level.block.state.BlockState state, net.minecraft.core.BlockPos pos, LivingEntity miner) {
+        if (!level.isClientSide()) {
+            if (miner instanceof Player player) {
+                boolean wasWaxed = OxidationHelper.isWaxed(stack);
+                OxidationHelper.onItemUsed(stack, player);
+
+                if (!wasWaxed) {
+                    float multiplier = OxidationHelper.getDurabilityMultiplier(stack);
+                    if (multiplier > 1.0f) {
+                        int extraDamage = Math.round(multiplier) - 1;
+                        stack.hurtAndBreak(extraDamage, miner, (e) ->
+                                e.broadcastBreakEvent(miner.getUsedItemHand()));
+                    }
+                }
+            }
+        }
+        return super.mineBlock(stack, level, state, pos, miner);
+    }
+
+    @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof Player player) {
             boolean wasWaxed = OxidationHelper.isWaxed(stack);

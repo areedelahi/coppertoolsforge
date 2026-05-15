@@ -67,30 +67,39 @@ public class OxidationHelper {
     }
 
     public static boolean onItemUsed(ItemStack stack, Player player) {
-        return onItemUsedWithThreshold(stack, player, OxidationConfig.USES_PER_OXIDATION_STAGE.get());
+        return updateOxidationFromDamage(stack, player);
     }
 
     public static boolean onArmorUsed(ItemStack stack, Player player) {
-        return onItemUsedWithThreshold(stack, player, OxidationConfig.ARMOR_USES_PER_OXIDATION_STAGE.get());
+        return updateOxidationFromDamage(stack, player);
     }
 
-    private static boolean onItemUsedWithThreshold(ItemStack stack, Player player, int threshold) {
+    private static boolean updateOxidationFromDamage(ItemStack stack, Player player) {
         if (isWaxed(stack)) {
             decrementWaxUse(stack, player);
             return false;
         }
 
-        int currentStage = getOxidationLevel(stack);
-        if (currentStage >= MAX_STAGE) {
-            return false; 
+        int maxDamage = stack.getMaxDamage();
+        if (maxDamage <= 0) return false;
+
+        int currentDamage = stack.getDamageValue();
+        float remainingPercent = (float) (maxDamage - currentDamage) / maxDamage;
+
+        int targetStage;
+        if (remainingPercent <= 0.25f) {
+            targetStage = STAGE_OXIDIZED;
+        } else if (remainingPercent <= 0.50f) {
+            targetStage = STAGE_WEATHERED;
+        } else if (remainingPercent <= 0.75f) {
+            targetStage = STAGE_EXPOSED;
+        } else {
+            targetStage = STAGE_UNAFFECTED;
         }
 
-        int useCount = getUseCount(stack) + 1;
-        setUseCount(stack, useCount);
-
-        if (useCount >= threshold) {
-            setUseCount(stack, 0); 
-            incrementOxidation(stack, 1);
+        int currentStage = getOxidationLevel(stack);
+        if (currentStage != targetStage) {
+            setOxidationLevel(stack, targetStage);
             return true;
         }
         return false;

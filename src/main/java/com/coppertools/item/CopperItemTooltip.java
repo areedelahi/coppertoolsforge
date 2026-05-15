@@ -39,7 +39,7 @@ public class CopperItemTooltip {
                 float speedMult = OxidationHelper.getSpeedMultiplier(stack);
                 if (speedMult < 1.0f) {
                     int penalty = Math.round((1.0f - speedMult) * 100);
-                    tooltip.add(Component.translatable("tooltip.coppertools.speed_penalty",
+                    tooltip.add(Component.translatable("tooltip.coppertools.efficiency_penalty",
                             Component.literal("-" + penalty + "%").withStyle(ChatFormatting.RED))
                             .withStyle(ChatFormatting.DARK_GRAY));
                 }

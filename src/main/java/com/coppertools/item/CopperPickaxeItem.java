@@ -52,7 +52,7 @@ public class CopperPickaxeItem extends PickaxeItem {
 
     @Override
     public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity miner) {
-        if (!level.isClientSide() && state.getDestroySpeed(level, pos) != 0.0f) {
+        if (!level.isClientSide()) {
             if (miner instanceof Player player) {
                 boolean wasWaxed = OxidationHelper.isWaxed(stack);
                 OxidationHelper.onItemUsed(stack, player);
@@ -68,6 +68,23 @@ public class CopperPickaxeItem extends PickaxeItem {
             }
         }
         return super.mineBlock(stack, level, state, pos, miner);
+    }
+
+    @Override
+    public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        if (attacker instanceof Player player) {
+            boolean wasWaxed = OxidationHelper.isWaxed(stack);
+            OxidationHelper.onItemUsed(stack, player);
+            if (!wasWaxed) {
+                float multiplier = OxidationHelper.getDurabilityMultiplier(stack);
+                if (multiplier > 1.0f) {
+                    int extraDamage = Math.round(multiplier) - 1;
+                    stack.hurtAndBreak(extraDamage, attacker, (e) ->
+                            e.broadcastBreakEvent(attacker.getUsedItemHand()));
+                }
+            }
+        }
+        return super.hurtEnemy(stack, target, attacker);
     }
 
     @Override

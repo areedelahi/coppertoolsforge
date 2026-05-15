@@ -12,7 +12,7 @@
   "tooltip.coppertools.oxidation_stage": "Oxidation: %s",
   "tooltip.coppertools.waxed_remaining": "Wax Protection: %s uses remaining",
   "tooltip.coppertools.not_waxed": "Not Waxed - Use Honeycomb to protect",
-  "tooltip.coppertools.speed_penalty": "Mining Speed: %s",
+  "tooltip.coppertools.efficiency_penalty": "Efficiency: %s",
   "tooltip.coppertools.armor_penalty": "Armor: %s",
   "message.coppertools.wax_expired": "The wax on your %s has worn off!"
 }

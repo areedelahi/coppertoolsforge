@@ -52,7 +52,7 @@ public class CopperAxeItem extends AxeItem {
 
     @Override
     public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity miner) {
-        if (!level.isClientSide() && state.getDestroySpeed(level, pos) != 0.0f) {
+        if (!level.isClientSide()) {
             if (miner instanceof Player player) {
                 boolean wasWaxed = OxidationHelper.isWaxed(stack);
                 OxidationHelper.onItemUsed(stack, player);

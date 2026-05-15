@@ -43,22 +43,7 @@ public class CopperArmorItem extends ArmorItem {
         return com.coppertools.oxidation.OxidationHelper.consumeWaxDurability(stack, amount, entity);
     }
 
-    @Override
-    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        super.inventoryTick(stack, level, entity, slotId, isSelected);
 
-        if (!level.isClientSide() && entity instanceof Player player) {
-            EquipmentSlot slot = getEquipmentSlot();
-            ItemStack equippedStack = player.getItemBySlot(slot);
-
-            if (equippedStack == stack) {
-
-                if (level.getGameTime() % 1200 == 0 && !OxidationHelper.isWaxed(stack)) {
-                    OxidationHelper.onArmorUsed(stack, player);
-                }
-            }
-        }
-    }
 
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
